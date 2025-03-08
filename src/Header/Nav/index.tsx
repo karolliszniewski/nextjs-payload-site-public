@@ -6,6 +6,9 @@ import type { Header as HeaderType } from '@/payload-types'
 import { CMSLink } from '@/components/Link'
 import Link from 'next/link'
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || ''
+console.log('base url:' + BASE_URL)
+
 export const HeaderNav: React.FC<{ data: HeaderType }> = ({ data }) => {
   const navItems = data?.navItems || []
 
@@ -15,10 +18,10 @@ export const HeaderNav: React.FC<{ data: HeaderType }> = ({ data }) => {
         return <CMSLink key={i} {...link} appearance="link" />
       })}
 
-      <Link href="/" className="text-primary">
+      <Link href={`${BASE_URL}/`} className="text-primary">
         Homepage
       </Link>
-      <Link href="/contact" className="text-primary">
+      <Link href={`${BASE_URL}/contact`} className="text-primary">
         Contact
       </Link>
     </nav>
