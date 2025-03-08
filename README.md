@@ -1,31 +1,38 @@
-# Next.js & Payload CMS Mini Project
+# NextJS Payload Site
 
-This project is a simple website built with Next.js (App Router) and Payload CMS. It includes a map with clickable markers, location detail pages, and a basic contact form.
+## Live Preview
 
-## How to Run Locally
+🌐 [View Demo](https://nextjs-payload-site-karolliszniewskis-projects.vercel.app)
 
-1. **Clone the Repository**
+## Getting Started
+
+### Clone Repository
 
 ```bash
 git clone https://github.com/karolliszniewski/nextjs-payload-site.git
+```
+
+### Navigate to Project Directory
+
+Navigate to Project Directory
+
+```bash
 cd nextjs-payload-site
 ```
 
-2. **Install Dependencies**
+### Install Dependencies
 
 ```bash
-npm install
+npm i
 ```
 
-3. **Install Dependencies**
-   Create a `.env.local` file with the required variables (e.g., MongoDB connection URI).
+### Run Development Server
 
-4. **Run the Development Server**
-
-```bash
+```
 npm run dev
 ```
 
-5. **View the site**
+### View Local Project
 
-Open http://localhost:3000 to view the site.
+Once the development server is running, open your browser and visit:
+🌐 [http://localhost:3000](http://localhost:3000)
