@@ -15,7 +15,6 @@ export const HeaderNav: React.FC<{ data: HeaderType }> = ({ data }) => {
         return <CMSLink key={i} {...link} appearance="link" />
       })}
 
-      {/* Dodajemy linki do Homepage i Contact */}
       <Link href="/" className="text-primary">
         Homepage
       </Link>
