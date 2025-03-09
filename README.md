@@ -78,6 +78,12 @@ Two navigation links are added dynamically using the `BASE_URL`, making navigati
 
 `src/app/(frontend)/contact/page.tsx`
 
+![image](https://github.com/user-attachments/assets/5290f314-c13b-4f8f-abc5-97201916abb4)
+
+![image](https://github.com/user-attachments/assets/ef78a9f1-760a-4d1a-b60c-56e9a6702156)
+
+![image](https://github.com/user-attachments/assets/3775790a-7237-4a01-aa5a-6edf00a0e59d)
+
 A simple form is created with basic validation using HTML attributes (`required`).
 
 ```tsx
@@ -199,6 +205,8 @@ export default Locations
   - Displaying location markers on the map.
   - Handling user interactions, such as clicking a marker to navigate to the location’s details page.
 - A loading state is managed to improve the user experience while data is being fetched.
+
+<img width="469" alt="image" src="https://github.com/user-attachments/assets/6903e24f-cdf3-4967-94e1-ba52669d182c" />
 
 ```tsx
 'use client'
@@ -322,6 +330,8 @@ export default function Home() {
 
 `src/app/(frontend)/location/[slug]/page.tsx`
 
+<img width="463" alt="image" src="https://github.com/user-attachments/assets/6f43c13d-eb4f-4d15-a8f6-6b8b2cda4012" />
+
 The application fetches location records from an API endpoint.
 
 ```tsx
@@ -334,33 +344,3 @@ The fetched data is then searched to find a specific location by comparing its `
 ```tsx
 const foundLocation = data.docs.find((loc: Location) => loc.slug === slug)
 ```
-
-#### Collection and Data
-
-After creating the project, I added a new collection and populated it with data.
-The Pins are fetched from an endpoint defined using Payload CMS. A NoSQL database is connected to Payload, allowing it to read and write data. This is achieved by simply adding the collection to the `payload.config.ts` file.
-
-<img width="469" alt="image" src="https://github.com/user-attachments/assets/6903e24f-cdf3-4967-94e1-ba52669d182c" />
-
-#### Location Pages
-
-For creating location pages, I created the file `src/app/(frontend)/location/[slug]/page.tsx`, which is automatically treated as a dynamic slug route.
-Here, a JSON object is fetched, and based on that data, information about the specific location is displayed.
-
-<img width="463" alt="image" src="https://github.com/user-attachments/assets/6f43c13d-eb4f-4d15-a8f6-6b8b2cda4012" />
-
-#### Contact Form
-
-I also implemented a contact form that displays the form content once submitted.
-![image](https://github.com/user-attachments/assets/3775790a-7237-4a01-aa5a-6edf00a0e59d)
-
-#### Validation
-
-The contact form includes:
-Email validation to ensure the email entered is in a valid format.
-
-![image](https://github.com/user-attachments/assets/5290f314-c13b-4f8f-abc5-97201916abb4)
-
-Required field validation to ensure all necessary fields are filled out.
-
-![image](https://github.com/user-attachments/assets/ef78a9f1-760a-4d1a-b60c-56e9a6702156)
