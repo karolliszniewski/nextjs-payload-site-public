@@ -6,13 +6,13 @@
 
 ## Getting Started
 
-### Clone Repository
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/karolliszniewski/nextjs-payload-site-public.git
 ```
 
-### Navigate to Project Directory
+### 2. Navigate to Project Directory
 
 Navigate to Project Directory
 
@@ -20,11 +20,14 @@ Navigate to Project Directory
 cd nextjs-payload-site
 ```
 
-### Install Dependencies
+### 3. Install Dependencies
 
 ```bash
 npm i
 ```
+
+### 4. Copy .env File
+Copy the previously provided .env file into the project directory, or create a new one based on the .env.example file.
 
 ### Run Development Server
 
