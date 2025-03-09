@@ -9,7 +9,7 @@
 ### Clone Repository
 
 ```bash
-git clone https://github.com/karolliszniewski/nextjs-payload-site.git
+git clone https://github.com/karolliszniewski/nextjs-payload-site-public.git
 ```
 
 ### Navigate to Project Directory
