@@ -7,7 +7,7 @@ import { buildConfig, PayloadRequest } from 'payload'
 import { fileURLToPath } from 'url'
 
 import { Categories } from './collections/Categories'
-import { Locations } from './collections/LocationsTemp'
+import { Locations } from './collections/Locations'
 
 import { Media } from './collections/Media'
 import { Pages } from './collections/Pages'
