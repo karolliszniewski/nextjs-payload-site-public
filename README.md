@@ -347,3 +347,74 @@ The fetched data is then searched to find a specific location by comparing its `
 ```tsx
 const foundLocation = data.docs.find((loc: Location) => loc.slug === slug)
 ```
+
+
+
+
+
+
+
+Assesment : 
+
+
+"Next.js & Payload CMS Mini Project
+
+Overview
+
+The goal of this exercise is to assess your ability to set up a basic Next.js website using Payload CMS as a headless CMS. The project should be structured as a Git repository that I can access, clone, and run locally.
+
+You will create a simple site with:
+
+• A map displaying clickable markers
+• A detail page for each marker, managed through Payload CMS
+• A basic contact form
+• The content is not important, so please use as much placeholder (Lorum Ipsum) text as you'd like.
+
+Requirements
+
+1. Project Setup
+• Create a GitHub (or similar) repository and provide access.
+• Use Next.js (App Router) and Payload CMS 3.
+• Use MongoDB (can be a local instance or a free MongoDB Atlas database).
+• Use Tailwind CSS for styling.
+• The project should be installable via npm install and runnable via npm run dev.
+
+2. Map with Clickable Markers
+• The front page (/) should display a map with a few clickable markers.
+• Clicking a marker should navigate to a detail page (/location/[slug]).
+• The map component should use React Leaflet (or another suitable mapping library).
+• The marker details (title, coordinates, and description) should be stored in Payload CMS.
+
+3. Location Detail Page
+• Each location should have a dedicated page (/location/[slug]).
+• The data should be dynamically fetched from Payload CMS.
+• The content structure in Payload CMS should include at least:
+• Title
+• Coordinates (lat, lng)
+• Description
+
+4. Basic Contact Form
+• A separate contact page (/contact) with a form.
+• The form should include at least:
+• Name (required)
+• Email (required & validated)
+• Message
+• On submit, log the form values to the console (no backend submission needed).
+
+5. Deployment & Instructions
+• Provide a clear README with setup and usage instructions.
+• Deployment (optional) to Vercel or another platform is a bonus.
+
+What We’re Looking For
+• Clean, maintainable code
+• Proper use of Next.js App Router and Payload CMS
+• UI built with Tailwind CSS
+• Functional map with interactive markers
+• Clear project structure
+
+How to Submit
+• Share the Git repository link.
+• Ensure the repo includes all necessary files to run locally.
+• Include a README with any important setup steps.
+
+"
